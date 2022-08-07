@@ -20,7 +20,7 @@ Memory limit: 1 GB.
 ## Test Set 1
 1≤N≤1000
 ## Test Set 2
-1≤N≤105.
+1≤N≤10^5.
 
 ## Sample
 ### Sample Input
