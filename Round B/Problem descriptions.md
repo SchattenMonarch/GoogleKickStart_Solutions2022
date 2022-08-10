@@ -1,0 +1,4 @@
+- [Hamiltonian Tour](https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/blob/main/Round%20B/Hamiltonian%20Tour/Hamiltonian%20Tour.md)
+- [Infinity Area](https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/blob/main/Round%20B/Infinity%20Area/Infinity%20Area.md)
+- [Palindromic Factors](https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/blob/main/Round%20B/Palindromic%20Factors/Palindromic%20Factors.md)
+- [Unlock the Padlock](https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/blob/main/Round%20B/Unlock%20the%20Padlock/Unlock%20the%20Padlock.md)
