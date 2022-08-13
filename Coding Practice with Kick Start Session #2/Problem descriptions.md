@@ -1,0 +1,4 @@
+- [Sherlock and Parentheses](https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%232/Sherlock%20and%20Parentheses/Sherlock%20and%20Parentheses.md)
+- [Building Palindromes](https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/blob/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%232/Building%20Palindromes/Building%20Palindromes.md)
+- [Irregular Expressions](https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/blob/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%232/Irregular%20Expressions/Irregular%20Expressions.md)
+- [Parcels](https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/blob/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%232/Parcels/Parcels.md)
