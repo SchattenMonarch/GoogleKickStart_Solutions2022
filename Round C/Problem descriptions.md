@@ -1,0 +1,4 @@
+- [New Password](https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Round%20C/New%20Password)
+- [Range Partition](https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Round%20C/Range%20Partition)
+- [Ants on a Stick](https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Round%20C/Ants%20on%20a%20Stick)
+- [Palindromic Deletions](https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/blob/main/Round%20C/Palindromic%20Deletions/Palindromic%20Deletions.md)
