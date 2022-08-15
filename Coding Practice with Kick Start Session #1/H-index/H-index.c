@@ -1,4 +1,8 @@
 /*
+Author: Dennis Folz
+Date  : 15/08/2022
+GitHub: https://github.com/SchattenMonarch
+
 Title: Google Kick Start 2022: Coding Practice with Kick Start Session #1
 
 Problem: H-Index
