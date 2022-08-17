@@ -122,7 +122,11 @@ int get_right_child(Heap* heap, int index) {
 }
 
 int get_parent(Heap* heap, int index) {
-	return FALSE;
+	int ret_val = INT_MIN;
+	if (heap != NULL && has_parent(heap, index)) {
+		ret_val = heap->item[get_parent_index(index)];
+	}
+	return ret_val;
 }
 
 unsigned char has_parent(Heap* h, int index) {
