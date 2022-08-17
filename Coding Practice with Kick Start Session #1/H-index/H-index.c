@@ -174,8 +174,8 @@ void heapify_down(Heap* heap, int index) {
 	//if there is no left child, the won't be a right child
 	while (has_left_child(heap, index)) {
 		smaller_child_index = !has_right_child(heap, index) ? get_left_child_index(index)
-															: get_left_child(heap, index) < get_right_child(heap, index) ? get_left_child_index(index)
-																														 : get_right_child_index(index);
+			                                            : get_left_child(heap, index) < get_right_child(heap, index) ? get_left_child_index(index)
+									                                                         : get_right_child_index(index);
 		if (heap->item[smaller_child_index] < heap->item[index]) {
 			swap(heap, index, smaller_child_index);
 		}
