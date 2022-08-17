@@ -83,6 +83,11 @@ int get_size(Heap* heap){
 	return heap->count;
 }
 
+unsigned char is_empty(Heap* heap){
+	if(heap == NULL) return FALSE;
+	return heap->count == 0 ? TRUE : FALSE;
+}	
+
 int get_top(Heap* heap){
 	if(heap == NULL || is_empty(heap)) return FALSE;
 	return heap->item[0];
