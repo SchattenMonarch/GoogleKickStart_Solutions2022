@@ -57,9 +57,9 @@ int get_right_child(Heap* heap, int index);
 int get_parent(Heap* heap, int index);
 
 unsigned char is_empty(Heap* heap);
-unsigned char has_parent(int index);
-unsigned char has_left_child(int index);
-unsigned char has_right_child(int index);
+unsigned char has_parent(Heap * h, int index);
+unsigned char has_left_child(Heap * h, int index);
+unsigned char has_right_child(Heap * h, int index);
 
 
 int main()
@@ -122,17 +122,18 @@ int get_parent(Heap* heap, int index) {
 	return FALSE;
 }
 
-unsigned char has_parent(int index) {
+unsigned char has_parent(Heap * h, int index) {
 	return FALSE;
 }
 
-unsigned char has_left_child(int index) {
+unsigned char has_left_child(Heap* h, int index) {
 	int left_child_index = get_left_child_index(index);
-	return (left_child_index > 0 && left_child_index < get_size) ? TRUE : FALSE;
+	return (left_child_index > 0 && left_child_index < get_size(h)) ? TRUE : FALSE;
 }
 
-unsigned char has_right_child(int index) {
-	return FALSE;
+unsigned char has_right_child(Heap * h, int index) {
+	int right_child_index = get_right_child_index(index);
+	return (right_child_index > 0 && right_child_index < get_size(h)) ? TRUE : FALSE;
 }
 
 void heapify_up(Heap* heap, int index) {
