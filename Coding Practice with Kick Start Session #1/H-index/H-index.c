@@ -122,8 +122,9 @@ int get_parent(Heap* heap, int index) {
 	return FALSE;
 }
 
-unsigned char has_parent(Heap * h, int index) {
-	return FALSE;
+unsigned char has_parent(Heap* h, int index) {
+	int parent_index = get_parent_index(index);
+	return (parent_index >= 0 && parent_index < get_size(h) -1) ? TRUE : FALSE;
 }
 
 unsigned char has_left_child(Heap* h, int index) {
