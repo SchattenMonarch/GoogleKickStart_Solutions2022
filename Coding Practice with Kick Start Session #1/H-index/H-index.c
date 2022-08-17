@@ -160,6 +160,10 @@ unsigned char has_right_child(Heap * h, int index) {
 }
 
 void heapify_up(Heap* heap, int index) {
+	if (heap == NULL) return;
+	while (has_parent(heap, index) && get_parent(heap, index) < heap->item[index]) {
+		swap(heap, index, get_parent_index(index));
+	}
 	return;
 }
 
