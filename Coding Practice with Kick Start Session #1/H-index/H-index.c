@@ -95,7 +95,6 @@ int get_top(Heap* heap) {
 
 int get_parent_index(int child_index) {
 	return child_index > 0 ? (child_index - 1) / 2 : INT_MIN;
-
 }
 
 int get_left_child_index(int parent_index) {
@@ -106,20 +105,13 @@ int get_right_child_index(int parent_index) {
 	return parent_index >= 0 ? parent_index * 2 + 2 : INT_MIN;
 }
 
-unsigned char has_parent(int index) {
-	return FALSE;
-}
-
-unsigned char has_left_child(int index) {
-	return FALSE;
-}
-
-unsigned char has_right_child(int index) {
-	return FALSE;
-}
-
 int get_left_child(Heap* heap, int index) {
-	return FALSE;
+	int ret_val = INT_MIN;
+	int left_child_index = get_left_child_index(index);
+	if (heap != NULL && left_child_index > 0) {
+		ret_val = heap->item[left_child_index];
+	}
+	return ret_val;
 }
 
 int get_right_child(Heap* heap, int index) {
@@ -127,6 +119,19 @@ int get_right_child(Heap* heap, int index) {
 }
 
 int get_parent(Heap* heap, int index) {
+	return FALSE;
+}
+
+unsigned char has_parent(int index) {
+	return FALSE;
+}
+
+unsigned char has_left_child(int index) {
+	int left_child_index = get_left_child_index(index);
+	return (left_child_index > 0 && left_child_index < get_size) ? TRUE : FALSE;
+}
+
+unsigned char has_right_child(int index) {
 	return FALSE;
 }
 
