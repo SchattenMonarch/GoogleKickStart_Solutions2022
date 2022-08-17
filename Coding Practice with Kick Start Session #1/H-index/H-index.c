@@ -183,7 +183,7 @@ void heapify_down(Heap* heap, int index) {
 	return;
 }
 
-void push(Heap* heap, int x) {
+void push(Heap* heap, int value) {
 	return;
 }
 
