@@ -99,7 +99,7 @@ int get_parent_index(int child_index) {
 }
 
 int get_left_child_index(int parent_index) {
-	return;
+	return parent_index >= 0 ? parent_index * 2 + 1 : INT_MIN;
 }
 
 int get_right_child_index(int parent_index) {
