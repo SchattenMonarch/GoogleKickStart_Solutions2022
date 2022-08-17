@@ -42,11 +42,11 @@ void down_heapify(Heap* heap, int index); /*Pushes an element downwards in the
 void up_heapify(Heap* heap, int index); /*Pushes an element upwards in the heap
                                            to find its correct position*/
 void push(Heap* heap, int x);           /*Inserts an element in the heap*/
-void pop(Heap* heap); /*Removes the top element from the heap*/
+void pop(Heap* heap); /*Removes the top element from the heap and adjusts the shape of the min heap*/
 int top(Heap* heap); /*Returns the top element of the heap or returns INT_MIN if
                         heap is empty*/
 int empty(Heap* heap); /*Checks if heap is empty*/
-int size(Heap* heap);  /*Returns the size of heap*/
+int size(Heap* heap);  /*Returns number of elements in the heap*/
 
 int main()
 {
@@ -55,6 +55,7 @@ int main()
 
 Heap* create_heap(void)
 {
+	//allocate memory for the heap and its elements
     Heap* heap = (Heap*)malloc(sizeof(Heap));
     heap->size = 1;
     heap->p = (int*)malloc(heap->size * sizeof(int));
