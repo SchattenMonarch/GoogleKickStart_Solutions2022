@@ -77,3 +77,9 @@ Heap* create_heap(void)
     return heap;
 }
 
+int get_size(Heap* heap){
+	if(heap == NULL) return FALSE;
+	
+	return heap->size;
+}
+
