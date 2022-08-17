@@ -80,6 +80,11 @@ Heap* create_heap(void)
 int get_size(Heap* heap){
 	if(heap == NULL) return FALSE;
 	
-	return heap->size;
+	return heap->count;
+}
+
+int get_top(Heap* heap){
+	if(heap == NULL || is_empty(heap)) return FALSE;
+	return heap->item[0];
 }
 
