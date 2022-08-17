@@ -94,7 +94,11 @@ int get_top(Heap* heap){
 }
 
 int get_parent_index(Heap* heap, int child_index){
-	return FALSE;
+	int ret_val = INT_MIN;
+	if(heap != NULL && child_index >0){
+		ret_val = (child_index -1)/2;
+	}
+	return ret_val;
 }
 
 int get_left_child_index(Heap* heap, int parent_index){
