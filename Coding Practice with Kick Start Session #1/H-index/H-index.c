@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 /*
 Author: Dennis Folz
-Date  : 15/08/2022
+Date  : 17/08/2022
 GitHub: https://github.com/SchattenMonarch
 
 Title: Google Kick Start 2022: Coding Practice with Kick Start Session #1
@@ -27,6 +27,27 @@ Case #2: 1 1 2 2 2 3
 
 #define TRUE 1
 #define FALSE 0
+
+typedef struct min_heap
+{
+    int* p;
+    int size;
+    int count;
+} Heap;
+
+Heap* create_heap(void); /*Creates a min_heap structure and returns a
+                                  pointer to the struct*/
+void down_heapify(Heap* heap, int index); /*Pushes an element downwards in the
+                                             heap to find its correct position*/
+void up_heapify(Heap* heap, int index); /*Pushes an element upwards in the heap
+                                           to find its correct position*/
+void push(Heap* heap, int x);           /*Inserts an element in the heap*/
+void pop(Heap* heap); /*Removes the top element from the heap*/
+int top(Heap* heap); /*Returns the top element of the heap or returns INT_MIN if
+                        heap is empty*/
+int empty(Heap* heap); /*Checks if heap is empty*/
+int size(Heap* heap);  /*Returns the size of heap*/
+
 int main()
 {
 	return 0;
