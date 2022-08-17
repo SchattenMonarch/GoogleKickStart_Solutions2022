@@ -107,15 +107,18 @@ int get_right_child_index(int parent_index) {
 
 int get_left_child(Heap* heap, int index) {
 	int ret_val = INT_MIN;
-	if (heap != NULL && has_left_child(index)) {
+	if (heap != NULL && has_left_child(heap, index)) {
 		ret_val = heap->item[get_left_child_index(index)];
 	}
 	return ret_val;
 }
 
 int get_right_child(Heap* heap, int index) {
-	
-	return FALSE;
+	int ret_val = INT_MIN;
+	if (heap != NULL && has_right_child(heap, index)) {
+		ret_val = heap->item[get_right_child_index(index)];
+	}
+	return ret_val;
 }
 
 int get_parent(Heap* heap, int index) {
