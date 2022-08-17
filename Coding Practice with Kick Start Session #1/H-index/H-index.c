@@ -93,3 +93,46 @@ int get_top(Heap* heap){
 	return heap->item[0];
 }
 
+int get_parent_index(Heap* heap, int child_index){
+	return FALSE;
+}
+
+int get_left_child_index(Heap* heap, int parent_index){
+	return FALSE;
+}
+
+int get_right_child_index(Heap* heap, int parent_index){
+	return FALSE;
+}
+
+unsigned char has_parent(Heap* heap, int index){
+	return FALSE;
+}
+    
+unsigned char has_left_child(Heap* heap, int index){
+	return FALSE;
+} 
+
+unsigned char has_right_child(Heap* heap, int index){
+	return FALSE;
+}
+
+void heapify_up(Heap* heap, int index){
+	return;
+}
+
+void heapify_down(Heap* heap, int index){
+	return;
+} 
+
+void push(Heap* heap, int x){
+	return;
+}  
+      
+void pop(Heap* heap){
+	return;
+}
+ 
+unsigned char swap(Heap* heap, int index_one, int index_two){
+	return FALSE;	
+} 
