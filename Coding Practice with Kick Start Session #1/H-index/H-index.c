@@ -103,7 +103,7 @@ int get_left_child_index(int parent_index) {
 }
 
 int get_right_child_index(int parent_index) {
-	return FALSE;
+	return parent_index >= 0 ? parent_index * 2 + 2 : INT_MIN;
 }
 
 unsigned char has_parent(int index) {
