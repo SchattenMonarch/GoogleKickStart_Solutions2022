@@ -41,7 +41,7 @@ Heap* create_heap(void);
 void heapify_up(Heap* heap, int index);
 void heapify_down(Heap* heap, int index);
 
-void push(Heap* heap, int x);
+void push(Heap* heap, int value);
 void pop(Heap* heap);
 unsigned char swap(Heap* heap, int index_one, int index_two);
 
@@ -91,6 +91,21 @@ unsigned char is_empty(Heap* heap) {
 int get_top(Heap* heap) {
 	if (heap == NULL || is_empty(heap)) return FALSE;
 	return heap->item[0];
+}
+
+unsigned char swap(Heap* heap, int index_one, int index_two) {
+	unsigned char ret_val = FALSE;
+	int tmp = INT_MIN;
+	if(heap != NULL 
+	   && index_one >= 0 && index_one < get_size(heap) 
+	   && index_two >= 0 && index_two < get_size(heap))
+	{
+		tmp = heap->item[index_one];
+		heap->item[index_one] = heap->item[index_two];
+		heap->item[index_two] = tmp;
+		ret_val = TRUE;
+	}
+	return ret_val;
 }
 
 int get_parent_index(int child_index) {
@@ -158,9 +173,5 @@ void push(Heap* heap, int x) {
 
 void pop(Heap* heap) {
 	return;
-}
-
-unsigned char swap(Heap* heap, int index_one, int index_two) {
-	return FALSE;
 }
 
