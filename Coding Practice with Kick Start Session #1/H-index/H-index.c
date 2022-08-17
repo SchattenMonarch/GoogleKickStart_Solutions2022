@@ -41,7 +41,7 @@ Heap* create_heap(void);
 void heapify_up(Heap* heap, int index);
 void heapify_down(Heap* heap, int index);
 
-void push(Heap* heap, int x);
+void push(Heap* heap, int value);
 void pop(Heap* heap);
 unsigned char swap(Heap* heap, int index_one, int index_two);
 
@@ -57,9 +57,9 @@ int get_right_child(Heap* heap, int index);
 int get_parent(Heap* heap, int index);
 
 unsigned char is_empty(Heap* heap);
-unsigned char has_parent(int index);
-unsigned char has_left_child(int index);
-unsigned char has_right_child(int index);
+unsigned char has_parent(Heap * h, int index);
+unsigned char has_left_child(Heap * h, int index);
+unsigned char has_right_child(Heap * h, int index);
 
 
 int main()
@@ -93,6 +93,21 @@ int get_top(Heap* heap) {
 	return heap->item[0];
 }
 
+unsigned char swap(Heap* heap, int index_one, int index_two) {
+	unsigned char ret_val = FALSE;
+	int tmp = INT_MIN;
+	if(heap != NULL 
+	   && index_one >= 0 && index_one < get_size(heap) 
+	   && index_two >= 0 && index_two < get_size(heap))
+	{
+		tmp = heap->item[index_one];
+		heap->item[index_one] = heap->item[index_two];
+		heap->item[index_two] = tmp;
+		ret_val = TRUE;
+	}
+	return ret_val;
+}
+
 int get_parent_index(int child_index) {
 	return child_index > 0 ? (child_index - 1) / 2 : INT_MIN;
 }
@@ -107,51 +122,72 @@ int get_right_child_index(int parent_index) {
 
 int get_left_child(Heap* heap, int index) {
 	int ret_val = INT_MIN;
-	int left_child_index = get_left_child_index(index);
-	if (heap != NULL && left_child_index > 0) {
-		ret_val = heap->item[left_child_index];
+	if (heap != NULL && has_left_child(heap, index)) {
+		ret_val = heap->item[get_left_child_index(index)];
 	}
 	return ret_val;
 }
 
 int get_right_child(Heap* heap, int index) {
-	return FALSE;
+	int ret_val = INT_MIN;
+	if (heap != NULL && has_right_child(heap, index)) {
+		ret_val = heap->item[get_right_child_index(index)];
+	}
+	return ret_val;
 }
 
 int get_parent(Heap* heap, int index) {
-	return FALSE;
+	int ret_val = INT_MIN;
+	if (heap != NULL && has_parent(heap, index)) {
+		ret_val = heap->item[get_parent_index(index)];
+	}
+	return ret_val;
 }
 
-unsigned char has_parent(int index) {
-	return FALSE;
+unsigned char has_parent(Heap* h, int index) {
+	int parent_index = get_parent_index(index);
+	return (parent_index >= 0 && parent_index < get_size(h) -1) ? TRUE : FALSE;
 }
 
-unsigned char has_left_child(int index) {
+unsigned char has_left_child(Heap* h, int index) {
 	int left_child_index = get_left_child_index(index);
-	return (left_child_index > 0 && left_child_index < get_size) ? TRUE : FALSE;
+	return (left_child_index > 0 && left_child_index < get_size(h)) ? TRUE : FALSE;
 }
 
-unsigned char has_right_child(int index) {
-	return FALSE;
+unsigned char has_right_child(Heap * h, int index) {
+	int right_child_index = get_right_child_index(index);
+	return (right_child_index > 0 && right_child_index < get_size(h)) ? TRUE : FALSE;
 }
 
 void heapify_up(Heap* heap, int index) {
+	if (heap == NULL) return;
+	while (has_parent(heap, index) && get_parent(heap, index) < heap->item[index]) {
+		swap(heap, index, get_parent_index(index));
+	}
 	return;
 }
 
 void heapify_down(Heap* heap, int index) {
+	if (heap == NULL) return;
+	int smaller_child_index = INT_MIN;
+
+	//if there is no left child, the won't be a right child
+	while (has_left_child(heap, index)) {
+		smaller_child_index = !has_right_child(heap, index) ? get_left_child_index(index)
+															: get_left_child(heap, index) < get_right_child(heap, index) ? get_left_child_index(index)
+																														 : get_right_child_index(index);
+		if (heap->item[smaller_child_index] < heap->item[index]) {
+			swap(heap, index, smaller_child_index);
+		}
+	}
 	return;
 }
 
-void push(Heap* heap, int x) {
+void push(Heap* heap, int value) {
 	return;
 }
 
 void pop(Heap* heap) {
 	return;
-}
-
-unsigned char swap(Heap* heap, int index_one, int index_two) {
-	return FALSE;
 }
 
