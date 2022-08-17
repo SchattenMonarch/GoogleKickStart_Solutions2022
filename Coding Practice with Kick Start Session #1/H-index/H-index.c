@@ -52,3 +52,12 @@ int main()
 {
 	return 0;
 }
+
+Heap* create_heap(void)
+{
+    Heap* heap = (Heap*)malloc(sizeof(Heap));
+    heap->size = 1;
+    heap->p = (int*)malloc(heap->size * sizeof(int));
+    heap->count = 0;
+    return heap;
+}
