@@ -31,35 +31,35 @@ Case #2: 1 1 2 2 2 3
 
 typedef struct min_heap
 {
-    int* item;
-    int size;
-    int count;
+	int* item;
+	int size;
+	int count;
 } Heap;
 
-Heap* create_heap(void); 
+Heap* create_heap(void);
 
 void heapify_up(Heap* heap, int index);
-void heapify_down(Heap* heap, int index); 
+void heapify_down(Heap* heap, int index);
 
-void push(Heap* heap, int x);        
-void pop(Heap* heap); 
-unsigned char swap(Heap* heap, int index_one, int index_two); 
+void push(Heap* heap, int x);
+void pop(Heap* heap);
+unsigned char swap(Heap* heap, int index_one, int index_two);
 
-int get_size(Heap* heap);  
-int get_top(Heap* heap); 
+int get_size(Heap* heap);
+int get_top(Heap* heap);
 
-int get_parent_index(Heap* heap, int child_index);
-int get_left_child_index(Heap* heap, int parent_index);
-int get_right_child_index(Heap* heap, int parent_index);
+int get_parent_index(int child_index);
+int get_left_child_index(int parent_index);
+int get_right_child_index(int parent_index);
 
 int get_left_child(Heap* heap, int index);
 int get_right_child(Heap* heap, int index);
 int get_parent(Heap* heap, int index);
 
-unsigned char is_empty(Heap* heap); 
-unsigned char has_parent(Heap* heap, int index);    
-unsigned char has_left_child(Heap* heap, int index); 
-unsigned char has_right_child(Heap* heap, int index);  
+unsigned char is_empty(Heap* heap);
+unsigned char has_parent(int index);
+unsigned char has_left_child(int index);
+unsigned char has_right_child(int index);
 
 
 int main()
@@ -70,73 +70,83 @@ int main()
 Heap* create_heap(void)
 {
 	//allocate memory for the heap and its elements
-    Heap* heap = (Heap*)malloc(sizeof(Heap));
-    heap->size = 1;
-    heap->item = (int*)malloc(heap->size * sizeof(int));
-    heap->count = 0;
-    return heap;
+	Heap* heap = (Heap*)malloc(sizeof(Heap));
+	heap->size = 1;
+	heap->item = (int*)malloc(heap->size * sizeof(int));
+	heap->count = 0;
+	return heap;
 }
 
-int get_size(Heap* heap){
-	if(heap == NULL) return FALSE;
-	
+int get_size(Heap* heap) {
+	if (heap == NULL) return FALSE;
+
 	return heap->count;
 }
 
-unsigned char is_empty(Heap* heap){
-	if(heap == NULL) return FALSE;
-	return heap->count == 0 ? TRUE : FALSE;
-}	
+unsigned char is_empty(Heap* heap) {
+	if (heap == NULL) return FALSE;
+	return heap->count <= 0 ? TRUE : FALSE;
+}
 
-int get_top(Heap* heap){
-	if(heap == NULL || is_empty(heap)) return FALSE;
+int get_top(Heap* heap) {
+	if (heap == NULL || is_empty(heap)) return FALSE;
 	return heap->item[0];
 }
 
-int get_parent_index(Heap* heap, int child_index){
-	int ret_val = INT_MIN;
-	if(heap != NULL && child_index >0){
-		ret_val = (child_index -1)/2;
-	}
-	return ret_val;
+int get_parent_index(int child_index) {
+	return child_index > 0 ? (child_index - 1) / 2 : INT_MIN;
+
 }
 
-int get_left_child_index(Heap* heap, int parent_index){
-	return FALSE;
-}
-
-int get_right_child_index(Heap* heap, int parent_index){
-	return FALSE;
-}
-
-unsigned char has_parent(Heap* heap, int index){
-	return FALSE;
-}
-    
-unsigned char has_left_child(Heap* heap, int index){
-	return FALSE;
-} 
-
-unsigned char has_right_child(Heap* heap, int index){
-	return FALSE;
-}
-
-void heapify_up(Heap* heap, int index){
+int get_left_child_index(int parent_index) {
 	return;
 }
 
-void heapify_down(Heap* heap, int index){
-	return;
-} 
+int get_right_child_index(int parent_index) {
+	return FALSE;
+}
 
-void push(Heap* heap, int x){
-	return;
-}  
-      
-void pop(Heap* heap){
+unsigned char has_parent(int index) {
+	return FALSE;
+}
+
+unsigned char has_left_child(int index) {
+	return FALSE;
+}
+
+unsigned char has_right_child(int index) {
+	return FALSE;
+}
+
+int get_left_child(Heap* heap, int index) {
+	return FALSE;
+}
+
+int get_right_child(Heap* heap, int index) {
+	return FALSE;
+}
+
+int get_parent(Heap* heap, int index) {
+	return FALSE;
+}
+
+void heapify_up(Heap* heap, int index) {
 	return;
 }
- 
-unsigned char swap(Heap* heap, int index_one, int index_two){
-	return FALSE;	
-} 
+
+void heapify_down(Heap* heap, int index) {
+	return;
+}
+
+void push(Heap* heap, int x) {
+	return;
+}
+
+void pop(Heap* heap) {
+	return;
+}
+
+unsigned char swap(Heap* heap, int index_one, int index_two) {
+	return FALSE;
+}
+
