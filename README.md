@@ -11,9 +11,9 @@ Problems that are solved are marked with a ☑ are solved in at least one langua
 
 ### Round: Coding Practice with Kick Start Session #1
 
-- [x] 1. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/Sample%20Problem">Sample Problem. Solution author: Dennis Folz (language C)</a> <br> 
-- [x] 2. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/Centauri%20Prime">Centauri Prime. Solution author: Dennis Folz (language C++)</a> <br> 
-- [x] 3. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/H-index">H-index. Solution author: Dennis Folz (language C)</a> <br> 
+- [x] 1. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/Sample%20Problem">Sample Problem. Solution author: Dennis Folz aka SchattenMonarch (language C)</a> <br> 
+- [x] 2. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/Centauri%20Prime">Centauri Prime. Solution author: Dennis Folz aka SchattenMonarch (language C++)</a> <br> 
+- [x] 3. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/H-index">H-index. Solution author: Dennis Folz aka SchattenMonarch (language C)</a> <br> 
 - [ ] 4. <a href="">Hex</a> <br> 
 - [ ] 5. <a href="">Milk Tea</a> <br> 
 
