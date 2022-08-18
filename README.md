@@ -1,5 +1,7 @@
 # GoogleKickStart_Solutions2022 :rocket: :moon: 
-This repository will contain all solutions for GoogleKickStart 2022 in C, C++, Java and Python. Feel free to contribute your solutions :fire: Don't forget to leave a :star: if you liked it :grin:
+This repository will contain all solutions for GoogleKickStart 2022 in C, C++, Java and Python. Feel free to contribute your solutions. :fire: 
+
+Don't forget to leave a :star:, if you liked it. :grin:
 
 ## What is google kick start?
 
@@ -7,13 +9,22 @@ This repository will contain all solutions for GoogleKickStart 2022 in C, C++, J
 
 ## List of all solutions
 
-Problems that are solved are marked with a ☑ are solved in at least one language. The name of the author and the language of the solution will be listed as well.
+Problems that are solved in at least one language are marked with a ☑. The name of the author and the language of the solution will be listed as well.
+
+Note: Only solutions are linked. If you are interested in solving a problem go to the issues. You'll find a link to all the problem descriptions in each issue.
+
+Thank you in advance. 👍
+
+Good luck and have fun. ⚡
 
 ### Round: Coding Practice with Kick Start Session #1
 
-- [x] 1. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/Sample%20Problem">Sample Problem. Solution author: Dennis Folz aka SchattenMonarch (language C)</a> <br> 
-- [x] 2. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/Centauri%20Prime">Centauri Prime. Solution author: Dennis Folz aka SchattenMonarch (language C++)</a> <br> 
-- [x] 3. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/H-index">H-index. Solution author: Dennis Folz aka SchattenMonarch (language C)</a> <br> 
+- [x] 1. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/Sample%20Problem">Sample Problem. </a> <br> 
+- Soved in C by Dennis Folz aka [SchattenMonarch](https://github.com/SchattenMonarch)
+- [x] 2. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/Centauri%20Prime">Centauri Prime.</a> <br>
+- Soved in C++ by Dennis Folz aka [SchattenMonarch](https://github.com/SchattenMonarch) 
+- [x] 3. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/H-index">H-index.</a> <br> 
+- Soved in C by Dennis Folz aka [SchattenMonarch](https://github.com/SchattenMonarch)
 - [ ] 4. <a href="">Hex</a> <br> 
 - [ ] 5. <a href="">Milk Tea</a> <br> 
 
