@@ -20,11 +20,11 @@ Good luck and have fun. ⚡
 ### Round: Coding Practice with Kick Start Session #1
 
 - [x] 1. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/Sample%20Problem">Sample Problem. </a> <br> 
-- Soved in C by Dennis Folz aka [SchattenMonarch](https://github.com/SchattenMonarch)
+- Solved in C by Dennis Folz aka [SchattenMonarch](https://github.com/SchattenMonarch)
 - [x] 2. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/Centauri%20Prime">Centauri Prime.</a> <br>
-- Soved in C++ by Dennis Folz aka [SchattenMonarch](https://github.com/SchattenMonarch) 
+- Solved in C++ by Dennis Folz aka [SchattenMonarch](https://github.com/SchattenMonarch) 
 - [x] 3. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/H-index">H-index.</a> <br> 
-- Soved in C by Dennis Folz aka [SchattenMonarch](https://github.com/SchattenMonarch)
+- Solved in C by Dennis Folz aka [SchattenMonarch](https://github.com/SchattenMonarch)
 - [ ] 4. <a href="">Hex</a> <br> 
 - [ ] 5. <a href="">Milk Tea</a> <br> 
 
