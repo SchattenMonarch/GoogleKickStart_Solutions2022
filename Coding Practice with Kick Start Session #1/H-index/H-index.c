@@ -184,6 +184,18 @@ void heapify_down(Heap* heap, int index) {
 }
 
 void push(Heap* heap, int value) {
+	if (heap == NULL) {
+		return;
+	} else if (heap->count >= heap->size) {
+		heap->size *= 2;
+		if (heap = realloc(heap, heap->size * sizeof(int)) == NULL) {
+			exit(1);
+		}
+	}
+	int last_index = heap->count - 1;
+	heap->count++;
+	heap->item[last_index];
+	heapify_up(heap, last_index);
 	return;
 }
 
