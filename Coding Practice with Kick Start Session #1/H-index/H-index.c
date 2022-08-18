@@ -200,6 +200,20 @@ void push(Heap* heap, int value) {
 }
 
 void pop(Heap* heap) {
+	if (heap == NULL) {
+		return;
+	}
+	else if (heap->count == 0) {
+		return;
+	}
+	heap->count--;
+	heap->item[0] = heap->item[heap->count];
+	if (heap->count < heap->size / 2) {
+		heap->size /= 2;
+		if (heap = realloc(heap, heap->size * sizeof(int)) == NULL) {
+			exit(1);
+		}
+	}
+	heapify_down(heap, 0);
 	return;
 }
-
