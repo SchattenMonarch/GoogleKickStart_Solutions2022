@@ -9,9 +9,9 @@ This repository will contain all solutions for GoogleKickStart 2022 in C, C++, J
 
 ### Round: Coding Practice with Kick Start Session #1
 
-- [x] 1. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/Sample%20Problem">Sample Problem. Author: Dennis Folz</a> <br> 
-- [x] 2. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/Centauri%20Prime">Centauri Prime. Author: Dennis Folz</a> <br> 
-- [x] 3. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/H-index">H-index</a> <br> 
+- [x] 1. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/Sample%20Problem">Sample Problem. C solution author: Dennis Folz</a> <br> 
+- [x] 2. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/Centauri%20Prime">Centauri Prime. C++ solution author: Dennis Folz</a> <br> 
+- [x] 3. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Coding%20Practice%20with%20Kick%20Start%20Session%20%231/H-index">H-index. C solution author: Dennis Folz</a> <br> 
 - [ ] 4. <a href="">Hex</a> <br> 
 - [ ] 5. <a href="">Milk Tea</a> <br> 
 
