@@ -1,3 +1,5 @@
+# [Matching Palindrome](https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb0f5/0000000000ba82c5)
+
 ## Problem
 You are given a palindrome string P of length N consisting of only lowercase letters of the English alphabet. Find the shortest non-empty palindrome string Q such that P concatenated with Q forms a palindrome. Formally, the string PQ forms a palindrome.
 
