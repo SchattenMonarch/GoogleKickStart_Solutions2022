@@ -62,3 +62,11 @@ Good luck and have fun. ⚡
 - [ ] 2. <a href="">Maximum Gain</a> <br> 
 - [ ] 3. <a href="">Touchbar Typing</a> <br> 
 - [ ] 4. <a href="">Suspects and Witnesses</a> <br> 
+
+### Round E
+
+- [x] 1. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Round%20E/Coloring%20Game">Coloring Game</a> <br> 
+- Solved in C by Dennis Folz aka [SchattenMonarch](https://github.com/SchattenMonarch)
+- [ ] 2. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/blob/main/Round%20E/Students%20and%20Mentors/Students%20and%20Mentors.md">Students and Mentors</a> <br> 
+- [ ] 3. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/blob/main/Round%20E/Matching%20Palindrome/Matching%20Palindrome.md">Matching Palindrome</a> <br> 
+- [ ] 4. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/blob/main/Round%20E/Pizza%20Delivery/Pizza%20Delivery.md">Pizza Delivery</a> <br> 
