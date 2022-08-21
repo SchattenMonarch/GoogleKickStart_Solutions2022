@@ -24,7 +24,7 @@ Memory limit: 1 GB.
 ## Test Set 2
 ```
 1≤T≤100.
-1≤N≤106.
+1≤N≤10^6.
 ```
 ## Sample
 ## Sample Input
@@ -47,7 +47,7 @@ Since there are no more possible moves, so the game ends. Thus, the answer is 1.
 
 In Sample Case #2, there are N=3 cells. The maximum achievable score by the bot is 1.
 
-- [](https://codejam.googleapis.com/dashboard/get_file/AQj_6U0A2oQ1-IjbxdybH0r_Ud3jYepEVdqxFHUQVCJ6gLMMdIx5XRZpB55kVGxmGLwPTYYsavjCnVMlhipy/sample_testcase_2.png)
+![](https://codejam.googleapis.com/dashboard/get_file/AQj_6U0A2oQ1-IjbxdybH0r_Ud3jYepEVdqxFHUQVCJ6gLMMdIx5XRZpB55kVGxmGLwPTYYsavjCnVMlhipy/sample_testcase_2.png)
 
 - First move: The bot paints the first cell with red color.
 - Second move: John paints the third cell with red color.
@@ -56,7 +56,7 @@ Since there are no more possible moves, so the game ends. Thus, the answer is 1.
 
 In Sample Case #3, there are N=6 cells. The maximum achievable score by the bot is 2. In this sample, there exist multiple solutions, one of them would be:
 
-- [](https://codejam.googleapis.com/dashboard/get_file/AQj_6U0qG_0H6FMJxWFgNIhnw-SHGulwn44rMyB6JytIC-7ZR2EDFYYuPqbl3CW6yIV6jA-FvbILhCHgABqG/sample_testcase_3.png)
+![](https://codejam.googleapis.com/dashboard/get_file/AQj_6U0qG_0H6FMJxWFgNIhnw-SHGulwn44rMyB6JytIC-7ZR2EDFYYuPqbl3CW6yIV6jA-FvbILhCHgABqG/sample_testcase_3.png)
 
 - First move: The bot paints the first cell with red color.
 - Second move: John paints the third cell with red color.
