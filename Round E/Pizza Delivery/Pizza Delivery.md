@@ -1,3 +1,5 @@
+# [Pizza Delivery](https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb0f5/0000000000ba86e6)
+
 ## Problem
 Ada delivers pizzas in a city consisting of a grid of N horizontal and N vertical streets, heading from North to South and from West to East, respectively, and numbered from 1 to N. The top left street crossing of the grid is (1,1).
 
