@@ -1,3 +1,5 @@
+# [Coloring Game](https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb0f5/0000000000ba856a)
+
 ## Problem
 John loves to play computer games. He recently discovered an interesting game. In the game there are N cells, which are aligned in a row from left to right and are numbered with consecutive integers starting from 1. Initially, all cells are coloured white. A cell is valid if it has white color and it does not have any adjacent red colored cell. On each turn, a player paints any valid cell with the red color. The game ends when no valid cells are present. The score of the player is equal to the number of cells they paint.
 
