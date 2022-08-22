@@ -94,3 +94,22 @@ void merge_sorted_arrays(ll a[], ll left, ll middle, ll right) {
 	free(right_arr);
 	return;
 }
+
+ll bs_lower_bound(ll a[], ll length, ll val) {
+	ll left = 0, right = length - 1, middle = 0;
+
+	while (left < right) {
+		//calculate the middle position
+		middle = left + (right - left) / 2;
+
+		//is the value in the left subarray?
+		if (val <= a[middle]) {
+			right = middle;
+		}//no? -> then it's in the right subarray
+		else {
+			left = middle + 1;
+		}
+	}
+
+	return (left > 0 && a[left] > val) ? left - 1 : left;
+}
