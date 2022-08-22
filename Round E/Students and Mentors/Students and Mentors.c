@@ -47,7 +47,6 @@ ll bs_upper_bound(ll arr[], ll length, ll val);
 
 ll bs_lower_bound(ll a[], ll length, ll val);
 
-int main(){
 int main()
 {
 	ll test_cases = 0;
