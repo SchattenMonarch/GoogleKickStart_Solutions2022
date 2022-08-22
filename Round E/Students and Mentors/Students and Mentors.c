@@ -2,7 +2,8 @@
 /*
 author: Dennis Folz
 github profile : https://github.com/SchattenMonarch
-date:   21.08.22
+date:   21.08.2022
+last uptade: 22.08.2022
 
 program: google kick start Round E: Students and Mentors 
 link: https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb0f5/0000000000ba84ae
@@ -47,6 +48,43 @@ ll bs_upper_bound(ll arr[], ll length, ll val);
 ll bs_lower_bound(ll a[], ll length, ll val);
 
 int main(){
+int main()
+{
+	ll test_cases = 0;
+	ll pos = BSEARCH_FAILED;
+	ll no_of_students = 0u;
+	ll* arr_ratings = NULL, * arr_ratings_sorted = NULL;
+
+	scanf("%lld", &test_cases);
+	for (ll i = 1; i <= test_cases; i++) {
+		//get no. of students
+		scanf("%lld", &no_of_students);
+		arr_ratings = (ll*)malloc(no_of_students * sizeof(ll));
+		arr_ratings_sorted = (ll*)malloc(no_of_students * sizeof(ll));
+
+		//get rating for each student
+		for (ll j = 0; j < no_of_students; j++) {
+			scanf("%lld", &arr_ratings[j]);
+			arr_ratings_sorted[j] = arr_ratings[j];
+		}
+		//sort the ratings in ascending order
+		merge_sort(arr_ratings_sorted, no_of_students);
+
+		printf("Case #%lld: ", i);
+		for (ll j = 0; j < no_of_students; j++) {
+			pos = bs_lower_bound(arr_ratings_sorted, no_of_students, 2 * arr_ratings[j]);
+			pos = arr_ratings_sorted[pos] == arr_ratings[j] ? pos - 1 : pos;
+			if (pos < 0) {
+				printf("%d ", -1);
+			}
+			else {
+				printf("%lld ", arr_ratings_sorted[pos]);
+			}
+		}
+		putchar('\n');
+		free(arr_ratings);
+		free(arr_ratings_sorted);
+	}
 	return 0;
 }
 
