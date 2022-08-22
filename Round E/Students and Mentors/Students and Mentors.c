@@ -53,3 +53,16 @@ int main(){
 void merge_sort(ll a[], ll length) {
 	merge_sort_recursion(a, 0, length - 1);
 }
+
+void merge_sort_recursion(ll a[], ll left, ll right) {
+	ll middle;
+	if (left < right) {
+		middle = left + (right - left) / 2;
+
+		merge_sort_recursion(a, left, middle); // NOT merge_sort_recursion(a, 0, middle);
+		merge_sort_recursion(a, middle + 1, right);
+
+		merge_sorted_arrays(a, left, middle, right);
+	}
+	return;
+}
