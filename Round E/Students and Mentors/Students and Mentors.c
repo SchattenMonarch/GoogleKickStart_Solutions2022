@@ -113,3 +113,46 @@ ll bs_lower_bound(ll a[], ll length, ll val) {
 
 	return (left > 0 && a[left] > val) ? left - 1 : left;
 }
+
+//These funtions are not necessary for this program. 
+//I implemented them for practice and because they might become useful in the future
+#ifndef NOT_USED
+ll binary_search(ll a[], ll length, ll val) {
+	ll left = 0, right = length - 1, pos = BSEARCH_FAILED;
+
+	while (left <= right) {
+		pos = left + (right - left) / 2;
+
+		if (a[pos] == val) {
+			return pos;
+		}
+		else if (a[pos] < val) {
+			left = pos + 1;
+		}
+		else {
+			right = pos - 1;
+		}
+
+	}
+	return BSEARCH_FAILED;
+}
+
+ll bs_upper_bound(ll arr[], ll length, ll val) {
+	ll middle = 0, left = 0, right = length - 1;
+
+	while (left < right) {
+		// calculate the middle position
+		middle = left + (right - left) / 2;
+
+		// is the value in the right subarray?
+		if (val >= arr[middle]) {
+			left = middle + 1;
+		}//no? -> then it's in the left subarray
+		else {
+			right = middle;
+		}
+	}
+
+	return (left < length && arr[left] <= val) ? left + 1 : left;
+}
+#endif
