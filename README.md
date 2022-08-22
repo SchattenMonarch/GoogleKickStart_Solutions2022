@@ -68,5 +68,6 @@ Good luck and have fun. ⚡
 - [x] 1. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Round%20E/Coloring%20Game">Coloring Game</a> <br> 
 - Solved in C by Dennis Folz aka [SchattenMonarch](https://github.com/SchattenMonarch)
 - [x] 2. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Round%20E/Students%20and%20Mentors">Students and Mentors</a> <br> 
+- Solved in C by Dennis Folz aka [SchattenMonarch](https://github.com/SchattenMonarch)
 - [ ] 3. <a href="">Matching Palindrome</a> <br> 
 - [ ] 4. <a href="">Pizza Delivery</a> <br> 
