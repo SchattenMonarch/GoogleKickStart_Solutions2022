@@ -40,9 +40,9 @@ int main()
     for (int i = 1; i <= test_cases; i++) {
 		//get the length of the following palindrome P
         scanf("%d", &length);
-		//allocate memory palindrome P
+		//allocate memory for the palindrome P
         str = (char*)malloc((length + 1) * sizeof(char));
-		//allocate memory the searched smallest palindrome Q (size <=P)
+		//allocate memory for the searched smallest palindrome Q (size <=P)
         smallest_pal = (char*)malloc((length + 1) * sizeof(char));
 		//allocate memory for the concatenated string PQ
         cat_str = (char*)malloc((2 * length + 1) * sizeof(char));
@@ -63,7 +63,7 @@ int main()
             if(length % (j + 1) == false){
 				//check if Q AND PQ are both palindromes
                 if (is_palindrome(smallest_pal, j + 1) && is_palindrome(cat_str, length + j + 1)) {
-					//found the smallest palindrome Q 
+					//found the smallest palindrome Q -> print it and go to the next test case
                     printf("%s\n", smallest_pal);
                     break;
                 }
