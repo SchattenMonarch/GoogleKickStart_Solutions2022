@@ -69,5 +69,6 @@ Good luck and have fun. ⚡
 - Solved in C by Dennis Folz aka [SchattenMonarch](https://github.com/SchattenMonarch)
 - [x] 2. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Round%20E/Students%20and%20Mentors">Students and Mentors</a> <br> 
 - Solved in C by Dennis Folz aka [SchattenMonarch](https://github.com/SchattenMonarch)
-- [ ] 3. <a href="">Matching Palindrome</a> <br> 
+- [x] 3. <a href="https://github.com/SchattenMonarch/GoogleKickStart_Solutions2022/tree/main/Round%20E/Matching%20Palindrome">Matching Palindrome</a> <br> 
+- Solved in C by Dennis Folz aka [SchattenMonarch](https://github.com/SchattenMonarch)
 - [ ] 4. <a href="">Pizza Delivery</a> <br> 
