@@ -49,9 +49,11 @@ int main()
             smallest_pal[j + 1] = '\0';
             cat_str[length + j] = str[j];
             cat_str[length + j + 1] = '\0';
-            if (is_palindrome(smallest_pal, j + 1) && is_palindrome(cat_str, length + j + 1)) {
-                printf("%s\n", smallest_pal);
-                break;
+            if(length%(j+1) == false){
+                if (is_palindrome(smallest_pal, j + 1) && is_palindrome(cat_str, length + j + 1)) {
+                    printf("%s\n", smallest_pal);
+                    break;
+                }
             }
         }
         free(str);
