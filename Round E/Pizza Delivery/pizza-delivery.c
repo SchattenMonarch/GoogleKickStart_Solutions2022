@@ -56,3 +56,26 @@ Case #2: IMPOSSIBLE
 Case #3: 1
 
 */
+
+#include <assert.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX_NO_OF_CUSTOMERS 10u
+#define ADA 0u
+
+typedef struct {
+    int row;
+    int column;
+    int coins;
+}customer;
+
+//index 0 will be reserved for ADA in order to track her current position and no. of coins
+customer cstmr[MAX_NO_OF_CUSTOMERS + 1] = { 0 };
+int grid_size = 0, no_of_pizzas = 0, minutes = 0;
+
+//variables for the toll-function
+char north_opd = '\0', east_opd = '\0', west_opd = '\0', south_opd = '\0';
+int north_kd = 0, east_kd = 0, west_kd = 0, south_kd = 0;
