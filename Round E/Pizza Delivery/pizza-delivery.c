@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 /*
 author: Dennis Folz
 github profile : https://github.com/SchattenMonarch
@@ -79,3 +80,46 @@ int grid_size = 0, no_of_pizzas = 0, minutes = 0;
 //variables for the toll-function
 char north_opd = '\0', east_opd = '\0', west_opd = '\0', south_opd = '\0';
 int north_kd = 0, east_kd = 0, west_kd = 0, south_kd = 0;
+
+void solve(int tc);
+void clear_stdin(void);
+void get_input_data(void);
+
+int main(void) {
+    int test_cases = 0;
+    //read first input line
+    while (scanf("%d", &test_cases) != 1) {
+        clear_stdin();
+    }
+    
+    for (int i = 1; i <= test_cases; i++) {
+        solve(i);
+    }
+    return 0;
+}
+
+void solve(int tc) {
+    get_input_data();
+    printf("Case #%d: ", tc);
+    //do something ...
+    return;
+}
+
+void get_input_data(void) {
+    //read first input line for each test case
+    scanf("%d %d %d %d %d", &grid_size, &no_of_pizzas, &minutes, &cstmr[ADA].row, &cstmr[ADA].column);
+    clear_stdin();
+    //read denoting operators (+ - * /) and numbers for each direction
+    scanf("%c %d %c %d %c %d %c %d", &north_opd, &north_kd, &east_opd, &east_kd, &west_opd, &west_kd, &south_opd, &south_kd);
+    clear_stdin();
+    for (int i = 1; i <= no_of_pizzas; i++) {
+        //read the coordinates and no. of coins for each customer
+        scanf("%d %d %d", &cstmr[i].row, &cstmr[i].column, &cstmr[i].coins);
+        clear_stdin();
+    }
+}
+
+// after scanf() a '\n' remains in stdin which needs to be cleared, so that it won't be wrongly read at the next scanf("%c"..);
+void clear_stdin(void) {
+    while (getchar() != '\n');
+}
