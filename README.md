@@ -1,5 +1,5 @@
 # GoogleKickStart_Solutions2022 :rocket: :moon: 
-This repository will contain all solutions for GoogleKickStart 2022 in C and C++.Feel free to contribute your solutions. :fire: 
+This repository will contain all solutions for GoogleKickStart 2022 in C and C++. Feel free to contribute your solutions. :fire: 
 
 Don't forget to leave a :star:, if you liked it. :grin:
 
